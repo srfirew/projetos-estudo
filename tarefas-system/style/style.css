@@ -40,7 +40,7 @@ main{
 .tarefa{
     display: flex;
     border: 2px solid black;
-    width: 560px;
+    width: 600px;
     background-color: #e8e9eb;
     align-content: center;
 }
