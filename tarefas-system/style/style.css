@@ -71,10 +71,3 @@ main{
     margin: 0;
 }
 
-.elements-tarefa-checkbox:hover input ~ .checkbox{
-    background-color: black;
-}
-
-.elements-tarefa-checkbox input:checked ~ .checkbox{
-    background-color: green;
-}
