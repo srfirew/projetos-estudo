@@ -15,5 +15,65 @@ h1{
 main{
     width: 40%;
     height: 600px;
-    border: 5px solid black;
+    bordr: 3px solid black;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    padding: 10px;
+
+}
+
+.header-button{
+    background: transparent;
+    border: none;
+}
+
+.header-button i{
+    font-size: 25px;
+}
+
+#lista-tarefas{
+    margin-top: 15px;
+}
+
+.tarefa{
+    display: flex;
+    border: 2px solid black;
+    width: 560px;
+    background-color: #e8e9eb;
+    align-content: center;
+}
+
+
+.elements-tarefa-text{
+    margin: 7px;
+
+}
+
+.elements-tarefa-text p,h3{
+    padding-left: 5px;
+    margin: 0;
+
+}
+
+.elements-tarefa-checkbox{
+    background-color: #bebebe;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox{
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.elements-tarefa-checkbox:hover input ~ .checkbox{
+    background-color: black;
+}
+
+.elements-tarefa-checkbox input:checked ~ .checkbox{
+    background-color: green;
 }
