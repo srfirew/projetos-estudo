@@ -71,5 +71,6 @@ main{
     height: 100%;
     cursor: pointer;
     box-sizing: border-box;
+    margin: 0;
 }
 

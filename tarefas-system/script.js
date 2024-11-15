@@ -1,11 +1,17 @@
 const mainContainer = document.getElementById("main-container")
 const listaTarefas = document.getElementById("lista-tarefas")
 
-const criadorTarefa = document.getElementById("criador-tarefas")
 
+function criarTarefas(){
 
-function criarTarefa(){
+    const criadorTrf = document.createElement("div")
+    criadorTrf.innerHTML = `
     
-    criadorTarefa.innerHTML = "<p>oi</p>"
+    <p>oi</p>
+
+    `
+
+    mainContainer.appendChild(criadorTrf)
+    mainContainer.insertBefore(criadorTrf, listaTarefas)
     
 }
