@@ -1,17 +1,19 @@
-const mainContainer = document.getElementById("main-container")
+const contentContainer = document.getElementById("content-container")
 const listaTarefas = document.getElementById("lista-tarefas")
 
 
 function criarTarefas(){
 
-    const criadorTrf = document.createElement("div")
-    criadorTrf.innerHTML = `
-    
-    <p>oi</p>
+    if(!criadorTrf){
+        const criadorTrf = document.createElement("div")
+        criadorTrf.innerHTML = `
+        
+        <p>oi</p>
 
-    `
+        `
 
-    mainContainer.appendChild(criadorTrf)
-    mainContainer.insertBefore(criadorTrf, listaTarefas)
+        contentContainer.insertBefore(criadorTrf, listaTarefas)
+    }
+
     
 }
