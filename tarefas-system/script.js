@@ -4,16 +4,20 @@ const listaTarefas = document.getElementById("lista-tarefas")
 
 function criarTarefas(){
 
+    let criadorTrf = document.getElementById("criador-trf")
+
     if(!criadorTrf){
-        const criadorTrf = document.createElement("div")
+
+        criadorTrf = document.createElement("div")
         criadorTrf.innerHTML = `
         
         <p>oi</p>
 
         `
 
+        criadorTrf.id = "criador-trf"
         contentContainer.insertBefore(criadorTrf, listaTarefas)
-    }
+    } 
 
     
 }
